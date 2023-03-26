@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS-Contact-App</title>
   <link rel="stylesheet" href="style.css"/>
-  <script src="app.js" ></script>
+  <script defer src="app.js" ></script>
 </head>
 <body>
   <header>
@@ -16,8 +16,18 @@
       </div>
  
       <div class="header-right">
-        <button>Add Contact</button>
+        <button data-modal-target="#modal">Add Contact</button>
       </div>
-    </header>
+  </header>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-title">Add Contact Details</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nulla ipsam vero assumenda architecto quaerat totam rem quibusdam ratione amet mollitia distinctio odio reiciendis, et ex esse illo doloremque? Necessitatibus sapiente distinctio explicabo. Excepturi, quaerat. Veniam illo doloribus perferendis dicta numquam, labore minus culpa dolorum alias eveniet accusamus odio minima, facere dolorem! Nihil iste ab quasi blanditiis. Maxime nemo voluptas debitis explicabo labore in ducimus neque sequi totam reprehenderit quas accusantium nesciunt consequuntur veniam quis, consectetur alias quibusdam nostrum consequatur.
+    </div>
+  </div>
+  <div  id="overlay"></div> 
 </body>
 </html>

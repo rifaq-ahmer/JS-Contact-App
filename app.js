@@ -1,6 +1,10 @@
 const openModalButton = document.querySelector("[data-modal-target]");
 const closeModalButton = document.querySelector("[data-close-button]");
 const overlay = document.getElementById("overlay");
+const addContactFormData = document.querySelectorAll(
+	"modal-body.add-contact-form input"
+);
+console.log("addContactFormData", addContactFormData);
 
 openModalButton.addEventListener("click", () => {
 	const modal = document.querySelector(openModalButton.dataset.modalTarget);
